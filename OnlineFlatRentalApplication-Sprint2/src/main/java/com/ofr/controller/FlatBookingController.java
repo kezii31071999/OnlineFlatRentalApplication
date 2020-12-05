@@ -72,7 +72,7 @@ public class FlatBookingController {
 	 * 
 	 **/
 
-	@GetMapping("/find/{id}")
+	@GetMapping("/find/{bookingNo}")
 	public ResponseEntity<Optional<FlatBooking>> viewFlatBooking(@PathVariable("bookingNo") Integer bookingNo) {
 		log.info("Started Searching FlatBooking Details by ID ");
 		
